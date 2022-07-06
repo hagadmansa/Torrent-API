@@ -1,6 +1,6 @@
-eval 
+.eval 
 import requests 
-query = "office fucking"
+query = "doctor strange"
 k = requests.get(f"https://api.safone.tech/torrent?query={query}")
 
 name1 = k.json()['results'][1]['name']
@@ -65,11 +65,65 @@ magnetLink10 = k.json()['results'][10]['magnetLink']
 
 data = f"""Torrent information for {query}
 
-1. {name}
+1. {name1}
 
-📦 {size}, 🟢 {seeders}, 🔴 {leechers}
+📦 {size1}, 🟢 {seeders1}, 🔴 {leechers1}
 
-📥 Magnet Link: {magnetLink}
+📥 Magnet Link: {magnetLink1}
+
+2. {name2}
+
+📦 {size2}, 🟢 {seeders2}, 🔴 {leechers2}
+
+📥 Magnet Link: {magnetLink2}
+
+3. {name3}
+
+📦 {size3}, 🟢 {seeders3}, 🔴 {leechers3}
+
+📥 Magnet Link: {magnetLink3}
+
+4. {name4}
+
+📦 {size4}, 🟢 {seeders4}, 🔴 {leechers4}
+
+📥 Magnet Link: {magnetLink4}
+
+5. {name5}
+
+📦 {size5}, 🟢 {seeders5}, 🔴 {leechers5}
+
+📥 Magnet Link: {magnetLink5}
+
+6. {name6}
+
+📦 {size6}, 🟢 {seeders6}, 🔴 {leechers6}
+
+📥 Magnet Link: {magnetLink6}
+
+7. {name7}
+
+📦 {size7}, 🟢 {seeders7}, 🔴 {leechers7}
+
+📥 Magnet Link: {magnetLink7}
+
+8. {name8}
+
+📦 {size8}, 🟢 {seeders8}, 🔴 {leechers8}
+
+📥 Magnet Link: {magnetLink8}
+
+9. {name9}
+
+📦 {size9}, 🟢 {seeders9}, 🔴 {leechers9}
+
+📥 Magnet Link: {magnetLink9}
+
+10. {name10}
+
+📦 {size10}, 🟢 {seeders10}, 🔴 {leechers10}
+
+📥 Magnet Link: {magnetLink10}
 
 Powered by @hagadmansa"""
 
